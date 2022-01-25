@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+    <body>
+        <h1>Add To Do</h1>
+        <form action= '/' method="POST">
+            <input type="text" name="title"/>
+            <select name="priority">
+                <option>low</option>
+                <option>Medium</option>
+                <option>High</option>
+            </select>
+            <button type="submit">Add</button>
+        </form>
+
+         <h2>To Do List<h2>
+                <ul>
+                    {{#toDos}}
+                    <li>
+                    {{title}} Priority: {{priority}} {{date}}
+                    </li>
+                    {{/toDos}}
+
+                </ul>
+    </body>
+
+</html>
